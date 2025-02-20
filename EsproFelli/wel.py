@@ -18,5 +18,4 @@ async def welcome_new_member(event):
             
             await event.reply(welcome_message)
 
-print("Bot is running...")
-bot.run_until_disconnected()
+
