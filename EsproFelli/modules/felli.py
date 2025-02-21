@@ -54,6 +54,10 @@ async def getid(client, message):
         parse_mode=ParseMode.DEFAULT,
       )
 
-# EsproFelli/some_module.py
-def run():
-    print("Hello from some_module 2!")
+# modules/felli.py
+
+def felli_function():
+    return "📢 Felli module is active!"
+
+if __name__ == "__main__":
+    print(felli_function())
