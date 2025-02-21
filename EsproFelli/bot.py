@@ -3,13 +3,14 @@ from pyrogram.types import *
 from pymongo import MongoClient
 from pyrogram import enums
 import requests
+from EsproFelli import bot
 import random
 import os
 import re
-from config import BOT_IMAGE, BOT_USERNAME, OWNER_USERNAME, SUPPORT_GROUP, UPDATES_CHANNEL
+from config import MONGO_URL, BOT_IMAGE, BOT_USERNAME, OWNER_USERNAME, SUPPORT_GROUP, UPDATES_CHANNEL
 
 bot = Client(
-    "V_Chat_Bot",
+    "ChatBot",
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN
