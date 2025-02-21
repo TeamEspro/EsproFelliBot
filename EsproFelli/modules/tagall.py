@@ -223,8 +223,10 @@ async def cancel_spam(client, message):
 
 # modules/wel.py
 
-def welcome_message():
-    return "👋 Welcome to EsproFelli!"
+# modules/tagall.py
+
+def tag_all():
+    return "📌 Tagging all members..."
 
 if __name__ == "__main__":
-    print(welcome_message())
+    print(tag_all())
