@@ -319,4 +319,8 @@ async def vprivatesticker(client: Client, message: Message):
                await message.reply_text(f"{hey}")
            if not Yo == "text":
                await message.reply_sticker(f"{hey}")
+
+# EsproFelli/some_module.py
+def run():
+    print("Hello from some_module 1!")
        
