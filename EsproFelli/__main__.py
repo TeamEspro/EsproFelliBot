@@ -10,6 +10,7 @@ from EsproFelli.modules.tagall import tag_all
 
 # Functions ko call karein
 app = app()
+bot = app()
 print(felli_function())
 print(welcome_message())
 print(tag_all())
