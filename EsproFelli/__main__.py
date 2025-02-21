@@ -4,9 +4,9 @@ from EsproFelli.__init__ import app
 
 # Absolute Import ka use karein
 
-from modules.felli import felli_function
-from modules.wel import welcome_message
-from modules.tagall import tag_all
+from EsproFelli.modules.felli import felli_function
+from EsproFelli.modules.wel import welcome_message
+from EsproFelli.modules.tagall import tag_all
 
 # Functions ko call karein
 app = app()
