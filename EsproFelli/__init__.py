@@ -22,4 +22,4 @@ class app(Client):
 
 from EsproFelli.modules.felli import felli_function
 from EsproFelli.modules.wel import welcome_message
-from EsproFelli.modules.tagall import tag_all
+
