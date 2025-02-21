@@ -322,7 +322,7 @@ async def vprivatesticker(client: Client, message: Message):
 
 # modules/bot.py
 
-def bot_function():
+def cot_function():
     return "🤖 Bot is now running!"
 
 if __name__ == "__main__":
