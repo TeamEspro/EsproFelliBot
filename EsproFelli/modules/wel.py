@@ -19,8 +19,11 @@ async def welcome_new_member(event):
             await event.reply(welcome_message)
 
 
-# EsproFelli/some_module.py
-def run():
-    print("Hello from some_module 4 !")
+# modules/wel.py
 
+def welcome_message():
+    return "👋 Welcome to EsproFelli!"
+
+if __name__ == "__main__":
+    print(welcome_message())
 
