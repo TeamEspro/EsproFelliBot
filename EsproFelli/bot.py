@@ -6,7 +6,7 @@ import requests
 import random
 import os
 import re
-from config import API_ID, API_HASH, BOT_TOKEN, MONGO_URL, BOT_IMAGE, BOT_USERNAME, 
+from config import BOT_IMAGE, BOT_USERNAME, OWNER_USERNAME, SUPPORT_GROUP, UPDATES_CHANNEL
 
 bot = Client(
     "V_Chat_Bot",
