@@ -19,3 +19,8 @@ async def welcome_new_member(event):
             await event.reply(welcome_message)
 
 
+# EsproFelli/some_module.py
+def run():
+    print("Hello from some_module 4 !")
+
+
