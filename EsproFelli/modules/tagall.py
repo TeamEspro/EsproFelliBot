@@ -221,6 +221,10 @@ async def cancel_spam(client, message):
             pass
         return await message.reply("♦STOP♦")
 
-# EsproFelli/some_module.py
-def run():
-    print("Hello from some_module 3!")
+# modules/wel.py
+
+def welcome_message():
+    return "👋 Welcome to EsproFelli!"
+
+if __name__ == "__main__":
+    print(welcome_message())
