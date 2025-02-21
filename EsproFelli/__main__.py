@@ -1,8 +1,10 @@
-from EsproFelli.modules import ALL_MODULES
+# main.py
 
-def main():
-    print("Running EsproFelli package...")
-    run()
+# Modules ko import kar rahe hain
+from modules import bot_function, felli_function, welcome_message, tag_all
 
-if __name__ == "__main__":
-    main()
+# Sare functions ko call karna
+print(bot_function())
+print(felli_function())
+print(welcome_message())
+print(tag_all())
