@@ -1,9 +1,7 @@
 from telethon import TelegramClient, events
-from EsproFelli import app
+from EsproFelli import bot as app
 
 # Initialize the client
-bot = TelegramClient('bot_session', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
-
 # Event to welcome new members
 @bot.on(events.ChatAction)
 async def welcome_new_member(event):
