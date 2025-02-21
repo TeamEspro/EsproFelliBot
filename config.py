@@ -18,4 +18,4 @@ UPDATE_CHANNEL = "EsproUpdate"
 BOT_USERNAME = "FelliChatBot"
 # GIT TOKEN ( if your edited repo is private)
 GIT_TOKEN = getenv("GIT_TOKEN", "")
-    
+BOT_IMAGE = getenv("BOT_IMAGE", "")
