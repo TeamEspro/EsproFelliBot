@@ -53,3 +53,7 @@ async def getid(client, message):
         disable_web_page_preview=True,
         parse_mode=ParseMode.DEFAULT,
       )
+
+# EsproFelli/some_module.py
+def run():
+    print("Hello from some_module 2!")
