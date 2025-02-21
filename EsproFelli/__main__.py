@@ -1,5 +1,5 @@
 from EsproFelli.modules import ALL_MODULES
-from DAXXMUSIC import app, bot
+from EsproFelli import app, bot
 
 def main():
     print("Running EsproFelli package...")
