@@ -21,8 +21,6 @@ def welcome_new_member(client, message):
 
         message.reply_text(welcome_text, parse_mode="markdown")
 
-print("Bot is running...")
-app.run()
 
 # modules/wel.py
 
