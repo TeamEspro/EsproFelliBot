@@ -4,7 +4,7 @@ from pyrogram.enums import ChatMemberStatus, ParseMode
 import config
 class app(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"Starting Bot...")
+       
         super().__init__(
             name="EsproMusic",
             api_id=config.API_ID,
