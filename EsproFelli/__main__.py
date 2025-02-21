@@ -1,9 +1,18 @@
 # main.py
 
-# Modules ko import kar rahe hain
-from modules import bot_function, felli_function, welcome_message, tag_all
+import sys
+import os
 
-# Sare functions ko call karna
+# modules folder ko Python path me add karein
+sys.path.append(os.path.join(os.path.dirname(__file__), "modules"))
+
+# Ab modules ko import karein
+from bot import bot_function
+from felli import felli_function
+from wel import welcome_message
+from tagall import tag_all
+
+# Sare functions ko call karein
 print(bot_function())
 print(felli_function())
 print(welcome_message())
