@@ -20,6 +20,6 @@ class app(Client):
 
 
 
-from .modules.felli import felli_function
-from .modules.wel import welcome_message
-from .modules.tagall import tag_all
+from EsproFelli.modules.felli import felli_function
+from EsproFelli.modules.wel import welcome_message
+from EsproFelli.modules.tagall import tag_all
