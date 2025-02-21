@@ -1,18 +1,12 @@
-# main.py
+# EsproFelli/main.py
 
-import sys
-import os
+# Absolute Import ka use karein
+from modules.bot import bot_function
+from modules.felli import felli_function
+from modules.wel import welcome_message
+from modules.tagall import tag_all
 
-# modules folder ko Python path me add karein
-sys.path.append(os.path.join(os.path.dirname(__file__), "modules"))
-
-# Ab modules ko import karein
-from bot import bot_function
-from felli import felli_function
-from wel import welcome_message
-from tagall import tag_all
-
-# Sare functions ko call karein
+# Functions ko call karein
 print(bot_function())
 print(felli_function())
 print(welcome_message())
