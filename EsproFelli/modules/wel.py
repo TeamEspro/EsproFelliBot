@@ -1,21 +1,28 @@
-from telethon import TelegramClient, events
+
 from EsproFelli import app
+from pyrogram import Client, filters
 
-# Initialize the client
-# Event to welcome new members
-@app.on(events.ChatAction)
-async def welcome_new_member(event):
-    if event.user_joined or event.user_added:
-        for user in event.action_message.action.users:
-            user_obj = await bot.get_entity(user)
-            full_name = user_obj.first_name + (" " + user_obj.last_name if user_obj.last_name else "")
-            user_id = user_obj.id
-            username = f"@{user_obj.username}" if user_obj.username else "No Username"
-            
-            welcome_message = f"🎉 **Welcome to the Group!** 🎉\n\n👤 **Full Name:** {full_name}\n🔹 **User ID:** {user_id}\n🔹 **Username:** {username}\n\n📢 **Enjoy & Follow the Rules!**"
-            
-            await event.reply(welcome_message)
+# Function to handle new member joins
+@app.on_message(filters.new_chat_members)
+def welcome_new_member(client, message):
+    for member in message.new_chat_members:
+        full_name = member.first_name
+        if member.last_name:
+            full_name += f" {member.last_name}"
+        username = f"@{member.username}" if member.username else "No Username"
+        user_id = member.id
 
+        welcome_text = (
+            f"👋 Welcome, {full_name}!\n"
+            f"🆔 User ID: `{user_id}`\n"
+            f"📛 Username: {username}\n"
+            f"🎉 Enjoy your stay in this group!"
+        )
+
+        message.reply_text(welcome_text, parse_mode="markdown")
+
+print("Bot is running...")
+app.run()
 
 # modules/wel.py
 
