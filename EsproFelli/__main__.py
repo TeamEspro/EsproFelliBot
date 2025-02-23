@@ -7,8 +7,8 @@ BOT_IMAGE = "https://telegra.ph/file/f1aca953494a6c4a4ad87.jpg"
 
 
 
-@app.on_message(filters.command("start") & filters.private)
-async def start_(client: Client, message: Message):
+@app.on_message(filters.command("start"))
+async def start(_,msg):
     await message.reply_photo(
         photo=f"{BOT_IMAGE}",
         caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
