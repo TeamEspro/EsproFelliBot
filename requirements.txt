@@ -1,8 +1,2 @@
 pyrogram
-pymongo
-requests
-dnspython
-python-telegram-bot==20.0
 tgcrypto
-telethon
-dotenv
