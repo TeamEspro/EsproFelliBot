@@ -67,7 +67,4 @@ async def tag_all_members(client: Client, message: Message):
 
 # modules/tagall.py
 
-def ritik():
-    return "📌 Tagging all members..."
 
-print(ritik())
