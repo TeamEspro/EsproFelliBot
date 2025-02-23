@@ -1,5 +1,7 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup , CallbackQuery 
+from EsproFelli import app
+
 BOT_IMAGE = "https://telegra.ph/file/f1aca953494a6c4a4ad87.jpg"
 
 
