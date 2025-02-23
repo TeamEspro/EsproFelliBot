@@ -65,5 +65,9 @@ async def tag_all_members(client: Client, message: Message):
 
     await message.reply("✅ Sabhi members ko successfully tag kar diya gaya!")
 
-print("bot run...")
+# modules/tagall.py
+
+def ritik():
+    return "📌 Tagging all members..."
+
 
