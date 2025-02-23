@@ -4,15 +4,12 @@ from EsproFelli import app
 
 
 @app.on_message(filters.command("id"))
-def id_command(client: Client, message: Message):
-    chat_type = message.chat.type  # Chat ka type check karein
-
-    if chat_type == "private":
-        # DM me sirf user ka ID send hoga
+def id_command(client, message):
+    if message.chat.type == "private":
+        # Agar private chat me command aayi hai, toh user ka ID bhejna hai
         user_id = message.from_user.id
-        message.reply_text(f"**Your ID:** `{user_id}`")  # Sirf user ID bhejna hai
-    elif chat_type in ["group", "supergroup"]:
-        # Group ya Supergroup me sirf group ka ID send hoga
+        message.reply_text(f"Your User ID: `{user_id}`")
+    else:
+        # Agar group me command aayi hai, toh group ka ID bhejna hai
         chat_id = message.chat.id
-        message.reply_text(f"**Group ID:** `{chat_id}`")  # Sirf group ID bhejna hai
-
+        message.reply_text(f"Chat ID: `{chat_id}`")
