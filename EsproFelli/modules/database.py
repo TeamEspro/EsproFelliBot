@@ -1,5 +1,6 @@
 from pyrogram import Client, filters, idle
 from pyrogram.types import *
+from config import MONGO_URL
 from pymongo import MongoClient
 from pyrogram import enums
 from pyrogram import app as bot
