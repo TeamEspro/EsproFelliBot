@@ -35,4 +35,4 @@ We're happy to have you here! 🎉
 
         # Send new welcome message and store its ID
         sent_message = await client.send_message(chat_id, welcome_text)
-        last_welcome_message[chat_id] = sent_message.message_id
+        last_welcome_message[chat_id] = sent_message.id  # Fix: Use 'id' instead of 'message_id'
