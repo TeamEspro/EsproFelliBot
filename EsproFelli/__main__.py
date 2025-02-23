@@ -1,5 +1,7 @@
-from EsproFelli.modules.tagall import app
+from EsproFelli.modules.tagall import ritik
 
 
 if __name__ == "__main__":
-    app.run()
+    LOG.info("started")
+    
+print(ritik)
