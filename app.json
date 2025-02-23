@@ -8,6 +8,10 @@
             "description": "Input Bot token here",
             "required": true
         },
+        "MONGO_URL": {
+            "description": "MONGO_URL",
+            "required": true
+        },
  
         "API_ID": {
             "description": "Input api id here",
