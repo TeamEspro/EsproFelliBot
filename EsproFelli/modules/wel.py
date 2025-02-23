@@ -10,17 +10,15 @@ async def welcome(client: Client, message: Message):
         if member.last_name:
             full_name += f" {member.last_name}"
 
-        username = f"@{member.username}" if member.username else "No Username"
         user_id = member.id
 
-        # Mention user using HTML formatting
-        mention = f'<a href="tg://user?id={user_id}">{full_name}</a>'
+        # Mention user using MarkdownV2 format
+        mention = f"[{full_name}](tg://user?id={user_id})"
 
         welcome_text = f"""
-        👋 Welcome {mention}!
-        🆔 ID: {user_id}
-        🔗 Username: {username}
-        🎉 We're happy to have you here!
-        """
+👋 Welcome {mention}!
+🎉 We're happy to have you here!
+"""
 
-        await message.reply_text(welcome_text, parse_mode="html")
+        await message.reply_text(welcome_text, parse_mode="markdown")
+
