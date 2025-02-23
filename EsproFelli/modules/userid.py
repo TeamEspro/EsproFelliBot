@@ -1,6 +1,6 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, CallbackContext
-
+from EsproFelli import app
 
 async def send_id(update: Update, context: CallbackContext):
     chat_type = update.message.chat.type  # Check chat type
