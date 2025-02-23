@@ -9,7 +9,7 @@ BOT_IMAGE = "https://telegra.ph/file/f1aca953494a6c4a4ad87.jpg"
 
 @app.on_message(filters.command("start"))
 async def start(_,msg):
-    await message.reply_photo(
+    await msg.reply_photo(
         photo=f"{BOT_IMAGE}",
         caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
 Hɪ I'ᴍ A Aᴅᴠᴀɴᴄᴇ 𝐇ocαηє [•ᴧғᴋ•].\n\n Nᴀᴍᴇ Is 𝐇ocαηє [•ᴧғᴋ•] Fᴏʀᴍ Iɴᴅɪᴀ \n\n ✔ I'ᴍ A Aʀᴛɪғɪᴄɪᴀʟ Iɴᴛᴇʟʟɪɢᴇɴᴄᴇ\n\n/ᴄʜᴀᴛʙᴏᴛ - [ᴏɴ/ᴏғғ] Tʜɪs Cᴏᴍᴍᴀɴᴅ Usᴇ Oɴʟʏ Aɴʏ Gʀᴏᴜᴘ
@@ -34,5 +34,3 @@ if __name__ == "__main__":
     LOG.info("started")
     app.run()
 
-
-print("Bot running...")
