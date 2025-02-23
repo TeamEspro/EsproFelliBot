@@ -3,8 +3,10 @@ from EsproFelli.__init__ import app
 
 # Absolute Import ka use karein
 
-from EsproFelli.modules.felli import felli_function
-from EsproFelli.modules.wel import welcome_message
+from EsproFelli.modules.tagall import felli_function
+from EsproFelli.modules.userid import welcome_message
+from EsproFelli.modules.welcom import welcome_message
+
 
 
 # Functions ko call karein
