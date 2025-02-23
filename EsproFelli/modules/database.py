@@ -2,7 +2,7 @@ from pyrogram import Client, filters, idle
 from pyrogram.types import *
 from pymongo import MongoClient
 from pyrogram import enums
-from pyrogram import app as bot
+from EsproFelli import app as bot
 import requests
 import random
 import os
