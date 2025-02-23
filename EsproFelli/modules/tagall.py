@@ -66,4 +66,4 @@ async def tag_all_members(client: Client, message: Message):
     await message.reply("✅ Sabhi members ko successfully tag kar diya gaya!")
 
 print("bot run...")
-app.run()
+
