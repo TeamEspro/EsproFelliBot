@@ -1,21 +1,10 @@
-from os import getenv
-
-from dotenv import load_dotenv
-
-load_dotenv()
-
-API_ID = "26992956"
-# -------------------------------------------------------------
-API_HASH = "9ba740b3c2b946c837e95852a780b7f8"
-# --------------------------------------------------------------
-BOT_TOKEN = getenv("BOT_TOKEN", None)
-MONGO_URL = getenv("MONGO_URL", None)
-OWNER_ID = int(getenv("OWNER_ID", "6693611573"))
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/Team/EsproFelliBot")
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
-SUPPORT_GROUP = "EsproSupport"
-UPDATE_CHANNEL = "EsproUpdate"
-BOT_USERNAME = "FelliChatBot"
-# GIT TOKEN ( if your edited repo is private)
-GIT_TOKEN = getenv("GIT_TOKEN", "")
-BOT_IMAGE = getenv("BOT_IMAGE", "https://telegra.ph/file/f1aca953494a6c4a4ad87.jpg")
+import os
+class Config:
+    API_ID=24509589
+    API_HASH="717cf21d94c4934bcbe1eaa1ad86ae75"
+    BOT_TOKEN="8084144216:AAEKmJkS-jwFFlmAtwvJaCoNQlzv1s5FJkQ"
+    SUDO = list(int(i) for i in os.environ.get("SUDO", "8158464263").split(" "))
+    START_IMG="https://telegra.ph/file/52fefb8bd51289a83a49b.jpg"
+    BOT_ID=8084144216
+    BOT_USERNAME="ZuliaiBot"
+    BOT_NAME="ZuliaiBot"
