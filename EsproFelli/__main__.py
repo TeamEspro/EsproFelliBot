@@ -33,3 +33,6 @@ EɴJᴏʏ Sᴜᴘᴇʀ Qᴜᴀʟɪᴛʏ Cʜᴀᴛ
 if __name__ == "__main__":
     LOG.info("started")
     app.run()
+
+
+print("Bot running...")
