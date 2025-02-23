@@ -2,13 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 import asyncio
 import random
-
-# Bot credentials (replace with your own values)
-API_ID = "12380656"
-API_HASH = "d927c13beaaf5110f25c505b7c071273"
-BOT_TOKEN = "7734465358:AAGMuYNK4DSMq8i7W5HofNa6WHr6xtbgRIU"
-
-app = Client("tagall_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+from EsproFelli import app
 
 # Alag-alag messages ka ek list
 custom_messages = [
