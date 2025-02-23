@@ -2,7 +2,7 @@ pyrogram
 pymongo
 requests
 dnspython
-telegram
+python-telegram-bot
 tgcrypto
 telethon
 dotenv
