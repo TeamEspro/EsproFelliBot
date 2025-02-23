@@ -1,4 +1,4 @@
-from telegram import Update
+from telegram.Update import Update
 from telegram.ext import Application, MessageHandler, filters, CommandHandler, CallbackContext
 from EsproFelli import app
 
