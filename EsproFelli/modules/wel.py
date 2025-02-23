@@ -10,6 +10,7 @@ async def welcome(client: Client, message: Message):
         if member.last_name:
             full_name += f" {member.last_name}"
 
+        username = f"@{member.username}" if member.username else "No Username"
         user_id = member.id
 
         # Mention user using HTML formatting
