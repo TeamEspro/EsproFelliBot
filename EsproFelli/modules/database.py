@@ -1,6 +1,7 @@
 from pyrogram import Client, filters, idle
 from pymongo import MongoClient
 import random
+from EsproFelli import app as bot
 
 
 MONGO_URL = "mongodb+srv://rogip74246:fCM4fkn8jWv9zizJ@ritikraj.mylvo.mongodb.net/?retryWrites=true&w=majority&appName=ritikraj"
