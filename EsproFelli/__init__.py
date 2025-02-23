@@ -19,6 +19,7 @@ if ENV:
     API_ID=int(os.environ.get("API_ID",""))
     API_HASH=str(os.environ.get("API_HASH",""))
     BOT_TOKEN=str(os.environ.get("BOT_TOKEN",""))
+    MONGO_URL =str(os.environ.get("MONGO_URL", ""))
     SUDO = list(int(i) for i in os.environ.get("SUDO", "6693611573").split(" "))
     START_IMG=str(os.environ.get("START_IMG",""))
     BOT_ID=int(os.environ.get("BOT_ID",""))
@@ -29,6 +30,7 @@ else:
     API_ID=Config.API_ID
     API_HASH=Config.API_HASH
     BOT_TOKEN=Config.BOT_TOKEN
+    MONGO_URL=Config.MONGO_URL
     SUDO=Config.SUDO
     START_IMG=Config.START_IMG
     BOT_ID=Config.BOT_ID
