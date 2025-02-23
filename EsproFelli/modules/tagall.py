@@ -70,4 +70,4 @@ async def tag_all_members(client: Client, message: Message):
 def ritik():
     return "📌 Tagging all members..."
 
-
+print(ritik())
