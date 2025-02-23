@@ -1,6 +1,5 @@
 from pyrogram import Client, filters, idle
 from pyrogram.types import *
-from config import MONGO_URL
 from pymongo import MongoClient
 from pyrogram import enums
 from pyrogram import app as bot
@@ -8,6 +7,7 @@ import requests
 import random
 import os
 import re
+MONGO_URL = "mongodb+srv://rogip74246:fCM4fkn8jWv9zizJ@ritikraj.mylvo.mongodb.net/?retryWrites=true&w=majority&appName=ritikraj"
 
 async def is_admins(chat_id: int):
     return [
