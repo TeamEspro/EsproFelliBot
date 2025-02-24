@@ -1,6 +1,5 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from EsproFelli import app
 
 # Delete new member join messages
 @app.on_message(filters.new_chat_members)
@@ -19,4 +18,13 @@ async def delete_leave_message(client: Client, message: Message):
         print(f"Deleted leave message in {message.chat.id}")
     except Exception as e:
         print(f"Error deleting leave message: {e}")
+
+# Delete video chat (voice chat) start/stop messages
+@app.on_message(filters.service)
+async def delete_vc_message(client: Client, message: Message):
+    try:
+        await message.delete()
+        print(f"Deleted voice chat message in {message.chat.id}")
+    except Exception as e:
+        print(f"Error deleting voice chat message: {e}")
 
