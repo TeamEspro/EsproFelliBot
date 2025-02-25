@@ -3,3 +3,4 @@ tgcrypto
 telegram 
 pymongo
 requests
+dnspython
