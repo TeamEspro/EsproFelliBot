@@ -41,7 +41,7 @@ def save_reply(client, message):
                 {"$set": {"reply": reply_text}},
                 upsert=True
             )
-            message.reply_text("✅ Reply saved!")
+            
 
 @app.on_message(filters.group & filters.text)
 def auto_reply(client, message):
