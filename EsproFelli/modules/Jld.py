@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from EsproFelli import apps
+from EsproFelli import app
 
 # Delete new member join messages
 @app.on_message(filters.new_chat_members)
