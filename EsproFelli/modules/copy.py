@@ -24,8 +24,7 @@ except Exception as e:
 db = client["telegram_bot"]  # Database ka naam
 collection = db["message_replies"]  # Collection ka naam
 
-# ✅ Pyrogram Bot Setup
-app = Client("auto_reply_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+
 
 @app.on_message(filters.group & filters.reply)
 def save_reply(client, message):
