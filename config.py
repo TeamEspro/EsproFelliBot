@@ -7,3 +7,5 @@ class Config:
     START_IMG="https://telegra.ph/file/52fefb8bd51289a83a49b.jpg"
     BOT_ID=7500257786
     MONGO_URL= "mongodb+srv://rogip74246:fCM4fkn8jWv9zizJ@ritikraj.mylvo.mongodb.net/?retryWrites=true&w=majority&appName=ritikraj"
+    BOT_NAME = "Felli"
+    BOT_USERNAME= "FelliAiBot"
