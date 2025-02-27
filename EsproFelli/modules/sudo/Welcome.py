@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
-
+from EsproFelli import app
 
 # Dictionary to store last welcome message ID per chat
 last_welcome_message = {}
