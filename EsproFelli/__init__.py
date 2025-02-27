@@ -18,7 +18,7 @@ ENV = bool(os.environ.get("ENV",False))
 if ENV:
     API_ID=int(os.environ.get("API_ID",""))
     API_HASH=str(os.environ.get("API_HASH",""))
-    TOKEN=str(os.environ.get("TOKEN",""))
+    BOT_TOKEN=str(os.environ.get("TOKEN",""))
     SUDO = list(int(i) for i in os.environ.get("SUDO", "6693611573").split(" "))
     START_IMG=str(os.environ.get("START_IMG",""))
     BOT_ID=int(os.environ.get("BOT_ID",""))
@@ -28,7 +28,7 @@ if ENV:
 else:
     API_ID=Config.API_ID
     API_HASH=Config.API_HASH
-    TOKEN=Config.TOKEN
+    BOT_TOKEN=Config.TOKEN
     SUDO=Config.SUDO
     START_IMG=Config.START_IMG
     BOT_ID=Config.BOT_ID
