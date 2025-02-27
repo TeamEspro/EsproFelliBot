@@ -18,7 +18,7 @@ ENV = bool(os.environ.get("ENV",False))
 if ENV:
     API_ID=int(os.environ.get("API_ID",""))
     API_HASH=str(os.environ.get("API_HASH",""))
-    BOT_TOKEN=str(os.environ.get("TOKEN",""))
+    BOT_TOKEN=str(os.environ.get("BOT_TOKEN",""))
     SUDO = list(int(i) for i in os.environ.get("SUDO", "6693611573").split(" "))
     START_IMG=str(os.environ.get("START_IMG",""))
     BOT_ID=int(os.environ.get("BOT_ID",""))
@@ -41,7 +41,7 @@ app=Client(
     "BOT",
     api_id=API_ID,
     api_hash=API_HASH,
-    bot_token=TOKEN,
+    bot_token=BOT_TOKEN,
     plugins=dict(root="EsproFelli.modules")
      )
 
