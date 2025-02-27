@@ -42,7 +42,7 @@ app=Client(
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN,
-    plugins=dict(root="EsproFelli.modules","EsproFelli.tools)
+    plugins=dict(root="EsproFelli.modules","EsproFelli.tools")
      )
 
 LOG.info("starting the bot....")
