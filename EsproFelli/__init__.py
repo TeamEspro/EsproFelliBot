@@ -28,7 +28,7 @@ if ENV:
 else:
     API_ID=Config.API_ID
     API_HASH=Config.API_HASH
-    BOT_TOKEN=Config.TOKEN
+    BOT_TOKEN=Config.BOT_TOKEN
     SUDO=Config.SUDO
     START_IMG=Config.START_IMG
     BOT_ID=Config.BOT_ID
