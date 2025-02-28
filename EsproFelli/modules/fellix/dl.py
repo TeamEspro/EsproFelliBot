@@ -25,12 +25,24 @@ async def delete_links(client, message: Message):
         await asyncio.sleep(30)
         await warning.delete()
 
+import os
+from pyrogram import Client, filters
 
-# /id command handler
+
+
+# /id command ka handler
 @app.on_message(filters.command("id"))
 async def send_id(client, message):
-    if message.chat.type in ["supergroup", "group"]:  # Agar group hai
-        await message.reply_text(f"📌 Group ID: `{message.chat.id}`")
-    elif message.chat.type == "private":  # Agar private chat hai
-        await message.reply_text(f"👤 Your ID: `{message.from_user.id}`")
+    chat_type = message.chat.type
+    chat_id = message.chat.id
+    user_id = message.from_user.id
 
+    if chat_type == "private":
+        # Agar DM hai, toh sirf User ID bhejo
+        await message.reply_text(f"👤 *User ID:* `{user_id}`", parse_mode="markdown")
+    else:
+        # Agar group hai, toh Chat ID + User ID dono bhejo
+        await message.reply_text(
+            f"🆔 *Chat ID:* `{chat_id}`\n👤 *User ID:* `{user_id}`",
+            parse_mode="markdown"
+        )
