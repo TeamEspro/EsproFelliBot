@@ -30,21 +30,3 @@ async def delete_links(client, message: Message):
     await warning.delete()
 
 # /id command ka handler
-@app.on_message(filters.command("id"))
-async def send_id(client, message):
-    chat_type = message.chat.type
-    chat_id = message.chat.id
-    user_id = message.from_user.id
-
-    if chat_type == "private":
-        # Agar DM hai, toh sirf User ID bhejo
-        await message.reply_text(
-            f"👤 *User ID:* `{user_id}`",
-            parse_mode="markdown2"
-        )
-    else:
-        # Agar group hai, toh Chat ID + User ID dono bhejo
-        await message.reply_text(
-            f"🆔 *Chat ID:* `{chat_id}`\n👤 *User ID:* `{user_id}`",
-            parse_mode="markdown2"
-        )
