@@ -25,13 +25,12 @@ async def delete_links(client, message: Message):
         await asyncio.sleep(30)
         await warning.delete()
 
+
+# /id command handler
 @app.on_message(filters.command("id"))
-def id_command(client, message):
-if message.chat.type == "private":
-# Agar private chat me command aayi hai, toh user ka ID bhejna hai
-user_id = message.from_user.id
-message.reply_text(f"Your User ID: {user_id}")
-else:
-# Agar group me command aayi hai, toh group ka ID bhejna hai
-chat_id = message.chat.id
-message.reply_text(f"Chat ID: {chat_id}")
+async def send_id(client, message):
+    if message.chat.type in ["supergroup", "group"]:  # Agar group hai
+        await message.reply_text(f"📌 Group ID: `{message.chat.id}`")
+    elif message.chat.type == "private":  # Agar private chat hai
+        await message.reply_text(f"👤 Your ID: `{message.from_user.id}`")
+
